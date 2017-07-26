@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kubra.hesapmakinesi.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/Sonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="right"
+        android:inputType="none"
+        android:text="0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/Dugme1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="1"
+        android:layout_below="@+id/Sonuc" />
+
+    <Button
+        android:id="@+id/Dugme2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/Dugme1"
+        android:layout_below="@+id/Sonuc"
+        android:layout_toRightOf="@+id/Dugme1"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/Dugme3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/Dugme1"
+        android:layout_toRightOf="@+id/Dugme2"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/DugmeArti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Dugme6"
+        android:layout_toRightOf="@+id/Dugme3"
+        android:background="@color/yel"
+        android:elevation="4dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/HafizayaEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/greenserena"
+        android:text="M+"
+        android:layout_alignBaseline="@+id/DugmeArti"
+        android:layout_alignBottom="@+id/DugmeArti"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/DugmeArti"
+        android:layout_toEndOf="@+id/DugmeArti" />
+
+    <Button
+        android:id="@+id/Dugme4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dugme1"
+        android:layout_toLeftOf="@+id/Dugme2"
+        android:background="@android:color/holo_purple"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/Dugme5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dugme2"
+        android:layout_toEndOf="@+id/Dugme1"
+        android:layout_toRightOf="@+id/Dugme1"
+        android:background="@android:color/holo_orange_light"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/Dugme6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Dugme5"
+        android:layout_alignBottom="@+id/Dugme5"
+        android:layout_toEndOf="@+id/Dugme2"
+        android:layout_toRightOf="@+id/Dugme2"
+        android:background="@android:color/holo_red_light"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/DugmeEksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Dugme6"
+        android:layout_alignBottom="@+id/Dugme6"
+        android:layout_toEndOf="@+id/Dugme6"
+        android:layout_toRightOf="@+id/Dugme6"
+        android:background="@color/yel"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/DugmeHafizadanCikar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DugmeEksi"
+        android:layout_alignBottom="@+id/DugmeEksi"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/greenserena"
+        android:text="M-"
+        android:layout_toRightOf="@+id/DugmeArti"
+        android:layout_toEndOf="@+id/DugmeArti" />
+
+    <Button
+        android:id="@+id/Dugme7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dugme4"
+        android:layout_toLeftOf="@+id/Dugme5"
+        android:background="?android:attr/colorEdgeEffect"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/Dugme8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dugme5"
+        android:layout_toEndOf="@+id/Dugme4"
+        android:layout_toRightOf="@+id/Dugme4"
+        android:background="@android:color/holo_blue_light"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/Dugme9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorshinegreen"
+        android:text="9"
+        android:layout_below="@+id/Dugme6"
+        android:layout_toEndOf="@+id/Dugme5"
+        android:layout_toRightOf="@+id/Dugme5" />
+
+    <Button
+        android:id="@+id/DugmeCarpi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/yel"
+        android:text="*"
+        android:layout_alignBaseline="@+id/Dugme9"
+        android:layout_alignBottom="@+id/Dugme9"
+        android:layout_toLeftOf="@+id/DugmeHafizayiGoster"
+        android:layout_toRightOf="@+id/Dugme6"
+        android:layout_toEndOf="@+id/Dugme6" />
+
+    <Button
+        android:id="@+id/DugmeHafizayiGoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DugmeCarpi"
+        android:layout_alignBottom="@+id/DugmeCarpi"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/greenserena"
+        android:text="MR"
+        android:layout_toRightOf="@+id/DugmeEksi"
+        android:layout_toEndOf="@+id/DugmeEksi" />
+
+    <Button
+        android:id="@+id/Dugme0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Dugme7"
+        android:background="@color/colorlightpink"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/DugmeSil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Dugme0"
+        android:layout_alignBottom="@+id/Dugme0"
+        android:layout_toEndOf="@+id/Dugme7"
+        android:layout_toRightOf="@+id/Dugme7"
+        android:background="@color/colorlightpurple"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/DugmeEsit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Dugme0"
+        android:layout_alignBottom="@+id/DugmeSil"
+        android:layout_toRightOf="@+id/DugmeSil"
+        android:background="@color/difyellow"
+        android:text="=" />
+
+    <Button
+        android:id="@+id/DugmeBolu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DugmeEsit"
+        android:layout_alignBottom="@+id/DugmeEsit"
+        android:layout_toRightOf="@+id/DugmeEsit"
+        android:background="@color/yel"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/DugmeHafizayiSil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DugmeBolu"
+        android:layout_alignBottom="@+id/DugmeBolu"
+        android:layout_toRightOf="@+id/DugmeBolu"
+        android:background="@color/greenserena"
+        android:text="MC" />
+
+</RelativeLayout>
